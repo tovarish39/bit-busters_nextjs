@@ -1,0 +1,230 @@
+.Section6 {
+  background-image: var(--bg-shum);
+
+  .WrapFormBadge {
+    display: flex;
+    padding: 2vw 0;
+
+    @media (max-width: 640px) {
+      display: block;
+    }
+  }
+
+  .Form {
+    position: relative;
+    margin: 2vw;
+    border: var(--border-gray);
+    width: 50%;
+    padding: 2vw;
+
+    @media (max-width: 640px) {
+      padding: 0;
+      width: auto;
+      border: none;
+      margin: 4vw;
+    }
+
+    &-Input {
+      background-color: black;
+      border: var(--border-gray);
+      font-family: montserrat;
+      height: 4vw;
+      width: 100%;
+      font-size: 1.5vw;
+      padding-left: 1vw;
+      margin-bottom: 1.5vw;
+
+      @media (max-width: 640px) {
+        height: 14vw;
+        font-size: 5vw;
+        padding-left: 2vw;
+        margin-bottom: 3vw;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: gray;
+        box-shadow: 0 0 1vw var(--color-purple);
+
+        @media (max-width: 640px) {
+          box-shadow: 0 0 5vw var(--color-purple);
+        }
+      }
+    }
+
+    &-Checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5vw;
+      cursor: pointer;
+
+      @media (max-width: 640px) {
+        margin-bottom: 3vw;
+      }
+
+      &-Container {
+        width: 1.5vw;
+        height: 1.5vw;
+        background-color: black;
+        border: var(--border-gray);
+        margin-right: 2vw;
+
+        @media (max-width: 640px) {
+          width: 6vw;
+          height: 6vw;
+          margin-right: 5vw;
+        }
+      }
+
+      &-CheckedImg {
+        display: none;
+        position: absolute;
+        height: 1.5vw;
+        width: 1.5vw;
+
+        @media (max-width: 640px) {
+          height: 6vw;
+          width: 6vw;
+        }
+
+        &_true {
+          display: block;
+        }
+      }
+
+      &-Label {
+        font-family: montserrat;
+        font-size: 1vw;
+
+        @media (max-width: 640px) {
+          font-size: 3vw;
+        }
+      }
+    }
+
+    &-Submit {
+      background-color: black;
+      border: var(--border-purple);
+      font-family: benzin-bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      @media (max-width: 640px) {
+        border: var(--border-purple-bold);
+      }
+
+      &-Text {
+        padding: 0.7vw 0 0.5vw 0;
+        font-size: 1.5vw;
+
+        @media (max-width: 640px) {
+          padding: 3.5vw 0 3vw 0;
+          font-size: 4.5vw;
+        }
+      }
+
+      &-Img {
+        width: 1vw;
+        height: 1vw;
+        position: relative;
+        top: 0.1vw;
+        left: 1vw;
+
+        @media (max-width: 640px) {
+          width: 3vw;
+          height: 3vw;
+          position: relative;
+          left: 2vw;
+        }
+      }
+    }
+  }
+
+  .Badge {
+    background-color: var(--color-gray-dark);
+    border: var(--border-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 2vw 0 2vw 2vw;
+    padding: 3vw;
+
+    @media (max-width: 640px) {
+      width: auto;
+      margin: 4vw;
+    }
+
+    &-Title {
+      font-family: benzin-bold;
+      font-size: 2vw;
+
+      @media (max-width: 640px) {
+        font-size: 5vw;
+        margin-bottom: 6vw;
+      }
+    }
+
+    &-Contacts {
+      display: flex;
+      justify-content: space-between;
+
+      &-Key {
+        color: var(--color-purple);
+        font-family: benzin-bold;
+        font-size: 2vw;
+
+        @media (max-width: 640px) {
+          font-size: 5vw;
+        }
+      }
+
+      &-Value {
+        font-family: montserrat;
+        font-size: 1.5vw;
+
+        @media (max-width: 640px) {
+          font-size: 4vw;
+        }
+      }
+    }
+
+    &-Footer {
+      font-family: montserrat;
+      font-size: 1vw;
+
+      @media (max-width: 640px) {
+        font-size: 3vw;
+        margin-top: 6vw;
+      }
+    }
+  }
+  .Footer {
+    background-color: var(--color-gray-dark);
+    border-top: 0.1vw solid var(--color-gray);
+    font-family: benzin-bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 2vw 0 2vw;
+    height: 3vw;
+    font-size: 1vw;
+    @media (max-width: 640px) {
+      padding: 3vw 0;
+      height: 23vw;
+      height: auto;
+      font-size: 4vw;
+    }
+
+    &-Block {
+      @media (max-width: 640px) {
+        min-width: 60vw;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}

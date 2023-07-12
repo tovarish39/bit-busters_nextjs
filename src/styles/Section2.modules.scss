@@ -1,0 +1,174 @@
+@import 'mixins';
+.Section2 {
+  position: relative;
+  background-image: var(--bg-shum);
+  min-height: 100vh;
+
+  .WrapContent {
+    position: relative;
+    height: 75vw;
+
+    @media (max-width: 640px) {
+      height: auto;
+    }
+  }
+
+  .WrapImgAndBlocks {
+    display: flex;
+    // overflow: hidden;
+    @media (max-width: 640px) {
+      display: block;
+    }
+  }
+
+  .WrapBlocks {
+    position: relative;
+    top: -13vw;
+    width: 46vw;
+
+    @media (max-width: 640px) {
+      position: static;
+      width: 46vw;
+    }
+  }
+
+  .ImgDesktop {
+    display: none;
+
+    @media (max-width: 640px) {
+      display: block;
+      position: absolute;
+      top: 13vw;
+      z-index: 0;
+    }
+  }
+
+  .ImgTV {
+    display: inline;
+    width: 40vw;
+    height: 40vw;
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .Title {
+    font-family: benzin-bold;
+    font-size: 8vw;
+    margin-left: 3vw;
+
+    @media (max-width: 640px) {
+      font-size: 13vw;
+      margin-left: 3vw;
+    }
+
+    &1 {
+      @include text-gradient;
+      position: sticky;
+      top: 2vw;
+      padding-top: 2vw;
+      z-index: 10;
+
+      @media (max-width: 640px) {
+        top: 2vw;
+        padding-top: 10vw;
+      }
+    }
+
+    &2 {
+      @include text-shadow;
+    }
+  }
+
+  .Block {
+    // overflow: hidden;
+    background-color: black;
+    background-color: black;
+    width: 38vw;
+    margin-left: 17vw;
+    padding: 2vw;
+
+    @media (max-width: 640px) {
+      margin: 0px 7vw;
+      padding: 2vw;
+    }
+
+    &_0 {
+      border: 0.1vw solid white;
+      position: relative;
+      top: -8vw;
+      transform: rotate(12deg);
+      width: 38vw;
+
+      @media (max-width: 640px) {
+        top: 0;
+        margin-bottom: 8vw;
+        transform: rotate(11deg);
+        position: relative;
+        left: -5vw;
+        width: 94vw;
+      }
+    }
+
+    &_1 {
+      border: 0.1vw solid white;
+      background-color: #1d1c1c;
+      position: relative;
+      left: -13vw;
+      top: -6vw;
+      transform: rotate(-7deg);
+      width: 51vw;
+
+      @media (max-width: 640px) {
+        width: 93vw;
+        left: -4vw;
+        top: 1vw;
+        transform: rotate(353deg);
+        margin-bottom: 8vw;
+      }
+    }
+
+    &_2 {
+      border: var(--border-purple);
+      position: relative;
+      top: -2vw;
+      left: -1vw;
+      transform: rotate(8deg);
+
+      @media (max-width: 640px) {
+        left: -4vw;
+        top: 3vw;
+        transform: rotate(9deg);
+        width: 92vw;
+      }
+    }
+
+    &-Title {
+      font-family: benzin-bold;
+      font-size: 3vw;
+
+      @media (max-width: 640px) {
+        font-size: 6.5vw;
+      }
+
+      &_0 {
+        @include text-gradient;
+      }
+
+      &_2 {
+        @include text-gradient;
+      }
+    }
+
+    &-Content {
+      font-family: montserrat;
+      font-size: 1.5vw;
+      // line-height: 2.5vw;
+
+      @media (max-width: 640px) {
+        font-size: 4vw;
+      }
+    }
+  }
+}

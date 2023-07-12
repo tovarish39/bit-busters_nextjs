@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --bg-shum: url('/gifs/shum.gif');
+  --bg-square: url('/gifs/VHS-фон_на_главном_экране.gif');
+
+  --color-gray: gray;
+  --color-gray-dark: #1d1c1c;
+  --color-purple: #e34aa1;
+
+  --border-purple: var(--color-purple) 0.2vw solid;
+  --border-purple-bold: var(--color-purple) 0.8vw solid;
+  --border-gray: var(--color-gray) 0.1vw solid;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  color: white;
+}
+
+@mixin font-face($font-family, $src) {
+  @font-face {
+    font-family: $font-family;
+    src: url($src);
+  }
+}
+
+@include font-face('benzin-bold', '/fonts/Benzin-Bold.ttf');
+@include font-face('benzin-medium', '/fonts/Benzin_Medium.ttf');
+@include font-face('montserrat', '/fonts/Montserrat-Regular.ttf');
+
+// .text-purple-custom {
+//   color: $c-purple;
+// }

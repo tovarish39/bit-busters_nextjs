@@ -1,0 +1,50 @@
+.Section4 {
+  padding-top: 10%;
+  background-image: var(--bg-shum);
+  padding-bottom: 5vw;
+  overflow: hidden;
+  .Block {
+    position: relative;
+    transform: rotateZ(356deg); // scale(1.2);
+    width: 120%;
+    margin: 0 auto;
+    height: 60vw;
+    left: -10%;
+    background: var(--c-purple);
+    background: linear-gradient(#ffffff 0%, #d385ff 100%), var(--bg-square);
+    background-blend-mode: hard-light;
+    background-size: cover;
+    &-Title {
+      font-family: 'benzin-bold';
+      font-size: 8vw;
+      transform: rotateZ(4deg) translateY(-50%);
+      background: linear-gradient(#1d1c1c, #474747);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      position: absolute;
+      top: 28vw;
+      left: 21vw;
+    }
+    &-LeftHand {
+      width: 44%;
+      position: relative;
+      left: -29%;
+      top: -2vw;
+      transition: transform 3s ease-in-out;
+      &_visible {
+        transform: translateX(43vw);
+      }
+    }
+    &-RightHand {
+      position: absolute;
+      left: 88vw;
+      top: 21vw;
+      width: 67vw;
+      transition: transform 3s ease-in-out;
+      &_visible {
+        transform: translateX(-46vw);
+      }
+    }
+  }
+}

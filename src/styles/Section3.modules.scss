@@ -1,0 +1,127 @@
+@import 'mixins';
+
+.Section3 {
+  background-image: var(--bg-shum);
+  overflow: hidden;
+
+  .Title {
+    @include text-gradient;
+    font-family: benzin-bold;
+    font-size: 8vw;
+    padding-left: 3vw;
+
+    @media (max-width: 640px) {
+      padding-top: 10vw;
+    }
+  }
+
+  .Blocks {
+    padding: 3vw;
+
+    @media (max-width: 640px) {
+      padding: 6vw;
+    }
+
+    &_scalling_true {
+      @media (max-width: 640px) {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .Block {
+    width: 60vw;
+    position: relative;
+    padding-bottom: 2vw;
+    transition: 1.5s ease-in-out;
+    // left: -10vw;
+
+    @media (max-width: 640px) {
+      width: auto;
+      position: static;
+      padding-bottom: 10vw;
+    }
+
+    &_side {
+      &_left_index_0 {
+        transition: 2s ease-in-out;
+        left: -30vw;
+
+        &_animation_true {
+          left: 0;
+        }
+      }
+      &_right_index_1 {
+        transition: 2.5s ease-in-out;
+        right: -50vw;
+        margin-left: auto;
+
+        &_animation_true {
+          right: 0;
+        }
+      }
+      &_left_index_2 {
+        transition: 3s ease-in-out;
+        left: -70vw;
+        &_animation_true {
+          left: 0;
+        }
+      }
+
+      &_right_index_3 {
+        transition: 3.5s ease-in-out;
+        right: -80vw;
+        margin-left: auto;
+
+        &_animation_true {
+          right: 0;
+        }
+      }
+    }
+    &-TitleBlock {
+      display: flex;
+      align-items: center;
+      font-family: benzin-bold;
+      &-Square {
+        background-image: var(--bg-square);
+        border: var(--border-purple);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 0.5vw;
+        font-size: 2.5vw;
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 1vw;
+
+        @media (max-width: 640px) {
+          padding-top: 2vw;
+          font-size: 8vw;
+          width: 16vw;
+          height: 16vw;
+          margin-bottom: 4vw;
+        }
+      }
+      &-Title {
+        font-size: 2vw;
+        margin-left: 2vw;
+        @media (max-width: 640px) {
+          width: min-content;
+          font-size: 5vw;
+          margin-left: 5vw;
+        }
+        &_eval_true {
+          color: var(--color-purple);
+        }
+      }
+    }
+    &-Content {
+      font-family: montserrat;
+      font-size: 1.5vw;
+      @media (max-width: 640px) {
+        font-size: 4vw;
+      }
+    }
+  }
+}
