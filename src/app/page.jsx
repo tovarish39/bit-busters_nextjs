@@ -8,10 +8,10 @@ import Section6 from '../Sections/Section6'
 
 export default function Page() {
   const acceptLanguageHeader = headers().get('accept-language')
-  const preferredLanguage =
-    acceptLanguageHeader && acceptLanguageHeader.split(',')[0] === 'ru'
-      ? 'ru'
-      : 'else'
+  const preferredLanguage = 'ru'
+  // acceptLanguageHeader && acceptLanguageHeader.split(',')[0] === 'ru'
+  //   ? 'ru'
+  //   : 'else'
 
   return (
     <>
