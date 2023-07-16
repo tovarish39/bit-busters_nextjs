@@ -6,7 +6,11 @@ const text = texts.Section2
 export default function Section2({ lg }) {
   return (
     <div className='Section2'>
-      <img src='/image/desctop.png' className='ImgDesktop' alt='' />
+      <img
+        src='/images/desktop.png'
+        className='ImgDesktop'
+        alt=''
+      />
       <div className='WrapContent'>
         <div id='aboutUs' />
 
@@ -15,10 +19,16 @@ export default function Section2({ lg }) {
         <div className='Title Title2'>{text.title.whoWe[lg]}</div>
 
         <div className='WrapImgAndBlocks'>
-          <img src='/images/TV.png' className='ImgTV' alt='' />
+          <img
+            src='/images/TV.png'
+            className='ImgTV'
+            alt=''
+          />
           <div className='WrapBlocks'>
             {text.blocks.map((block, index) => (
-              <div key={index} className={`Block Block_${index}`}>
+              <div
+                key={index}
+                className={`Block Block_${index}`}>
                 <div className={`Block-Title Block-Title_${index}`}>
                   {block.title[lg]}
                 </div>
