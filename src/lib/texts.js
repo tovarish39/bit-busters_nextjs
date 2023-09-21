@@ -395,7 +395,7 @@ export const texts = {
           ru: 'E-mail',
           else: 'E-mail',
         },
-        value: 'Info@bitbusters.ru',
+        value: 'Info@bitbusters.pro',
       },
       phone: {
         title: {
